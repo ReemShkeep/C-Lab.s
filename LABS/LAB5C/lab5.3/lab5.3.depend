@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1667682915 source:d:\b new iti 22.23\iti 22.23\c\labs\lab5c\lab5.3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+
