@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-// 4) C Program to Find the Frequency of Characters in a String
+
+/*
+2) Recursive: Power.
+*/
+
 
 int main()
 {

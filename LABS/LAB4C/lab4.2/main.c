@@ -1,35 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define SIZE 100
-//6) C Program to Find the Length of a String without Using strlen()
-int str_len(const char* target);
+#define NULL -32
+
+
+
+
 int main()
 {
-    char str[SIZE];
-    int counter = 0;
-    char input = 'i'; //initialize a dummy value
+    char x;
+    x = getch();
+    printf("please enter any key  \n");
 
-    printf("Enter a value: ");
-    while (counter < SIZE && 10 != input) // 10 is ASCI for ENTER key
+    if (x==NULL)
     {
-        scanf("%c", &input);
-        // will count any thing except ENTER key
-        if (10 != input)
-        {
-            str[counter] = input;
-            counter++;
-        }
+        system ("cls" );
+        x = getch();
+        printf("the key you has entered is %c (an extended key )and its ascii is %d \n",x,x);
+
     }
-    printf(">>> %d", str_len(str));
+    else
+
+    {  system ("cls" );
+        printf("the key you has entered is  %c (a normal key ) and its ascii is %d \n", x, x);
+    }
     return 0;
 }
-int str_len(const char* target)
-{
-    //loops until it finds the terminator
-    int counter = 0;
-    while ('\0' != target[counter])
-    {
-        counter++;
-    }
-    return counter;
-}
+
+

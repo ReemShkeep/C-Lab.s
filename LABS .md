@@ -71,13 +71,13 @@ Day 4:
 
 Answer the following questions:
 --------------------------------
-1) C Program to swap 2 integer values. (Swap function, calling by address)
+1) C Program to swap 2 integer values. (Swap function, calling by address) 
 
-1) Receive character by character and then place the string terminator upon pressing enter, then display the string.
+1) Receive character by character and then place the string terminator upon pressing enter, then display the string.d
 
-2) C Program to take char and displays if it is "Normal or Extended key" along with its Ascii value.
+2) C Program to take char and displays if it is "Normal or Extended key" along with its Ascii value. d
 
-3) C Program to take firstName and lastName from user, then displays fullName.
+3) C Program to take firstName and lastName from user, then displays fullName. d
 
 4) C Program to Find the Frequency of Characters in a String
 
