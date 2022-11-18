@@ -1,30 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// C Program to swap 2 integer values. (Swap function, calling by address)
+// 5 - C Program to Find the Frequency of Characters in a String
 
 int main()
 {
-    int x, y;
-    printf(" This program will swap integers \n please enter the values \n ");
-    printf("where x = \n ");
-    scanf(" %d", &x);
-    printf("and y = ");
-    scanf(" %d", &y);
-    // int *px=&x;
-    // int *py=&y;
-    // swap(px, py);
-    swap(&x, &y);
-    printf("\nAfter Swap: x = %d, while  y = %d", x, y);
+    int i, count = 0;
+    char str[100], ch;
 
-    void swap(int x, int y)
+    printf("please enter the statment");
+    gets(str);
+    printf("please enter the character you want to know its frequency");
+    gets(ch);
+    for (i = 0; str[i] != '\0'; i++)
     {
-        int temp;
-        temp = 0;
-        temp = *x;
-        x = *y;
-        y = temp;
-        y = *x;
+        if (ch = str[i])
+            count++;
     }
+    printf("the %c occures in %d times in %s" ch, count, str);
+
     return 0;
 }

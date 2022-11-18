@@ -1,29 +1,21 @@
+
 #include <stdio.h>
 #include <stdlib.h>
-#define NULL -32
 
-
-
-
+// 2) Receive character by character and then place the string terminator upon pressing enter, then display the string.
 int main()
 {
-    char x;
-    x = getch();
-    printf("please enter any key  \n");
-
-    if (x==NULL)
+    char input[200];
+    int i;
+    printf("please enter the text :  \n");
+    gets(input);
+    system("cls");
+    printf("you have entered \"%s\" which is \n{", input);
+    for (i = 0; input[i] != '\0'; i++)
     {
-        system ("cls" );
-        x = getch();
-        printf("the key you has entered is %c (an extended key )and its ascii is %d \n",x,x);
-
+        printf(" %c", input[i]);
     }
-    else
+    printf("}\n \n DONE");
 
-    {  system ("cls" );
-        printf("the key you has entered is  %c (a normal key ) and its ascii is %d \n", x, x);
-    }
     return 0;
 }
-
-

@@ -1,18 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-// 3) C Program to take firstName and lastName from user, then displays fullName.
+#define NULL -32
 
 int main()
 {
-    char x[50], y[50];
-    printf("please enter your first name : \n");
-     scanf("%s",&x);
-    printf("please enter your second name :\n");
-    scanf("%s",&y);
+    char x;
+    x = getch();
+    printf("please enter any key  \n");
 
-    system("cls");
-    printf(" Your FullName is : %s %s  \n", x,y);
+    if (x == NULL)
+    {
+        system("cls");
+        x = getch();
+        printf("the key you has entered is %c (an extended key )and its ascii is %d \n", x, x);
+    }
+    else
 
-
+    {
+        system("cls");
+        printf("the key you has entered is  %c (a normal key ) and its ascii is %d \n", x, x);
+    }
     return 0;
 }
