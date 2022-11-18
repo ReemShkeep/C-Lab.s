@@ -18,7 +18,6 @@ int main()
     printf("4. This is item number four.");
     gotoxy(65, 5);
     printf("5. This is item number five.");
-    std::cin >> x;
     return 0;
 }
 
@@ -88,7 +87,7 @@ gotoxy(, ),
 gotoxy(, ),
     printf("%c,20");
 gotoxy(, ),
-    gotoxy(65, 13);
+gotoxy(65, 13);
 printf("1. This is item number one.");
 gotoxy(65, 11);
 printf("2. This is item number two.");
