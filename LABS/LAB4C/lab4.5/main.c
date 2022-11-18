@@ -6,18 +6,18 @@
 int main()
 {
     int i, count = 0;
-    char str[100], ch;
+    char str[200], ch;
 
-    printf("please enter the statment");
+    printf("\n please enter the statment \n");
     gets(str);
-    printf("please enter the character you want to know its frequency");
-    gets(ch);
+    printf("\n please enter the character you want to know its frequency \n ");
+    scanf("%c", &ch);
+    //getch(ch);
     for (i = 0; str[i] != '\0'; i++)
     {
-        if (ch = str[i])
-            count++;
+        if (ch == str[i])
+              count++;
     }
-    printf("the %c occures in %d times in %s" ch, count, str);
-
+     printf("the %c occures in %d times in %s" ,ch, count, str);
     return 0;
 }
